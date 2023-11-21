@@ -4,35 +4,37 @@ const Header = () =>{
     return (
         <View style={styles.container}>
             <View style={styles.leftContainer}>
-            <Text style={styles.header}>Header</Text>
+            <Text style={styles.header}>Explore</Text>
             </View>
             <View style={styles.rightContainer}>
-            <Text style={styles.header}>Header</Text>
+           <Image source={require('../../../assets/NASALOGO.png')} style={styles.image}></Image>
           </View>
         </View>
     )
 }
 const styles = StyleSheet.create({
     container:{
-      
         flexDirection: 'row',
-      alignItems :'center',
+        alignItems: 'center',
+        paddingTop: 30,
+       
     },
     leftContainer:{
         flex: 1,
         alignItems: 'flex-start',
     },
     rightContainer:{
-       
+       flex: 1,
         alignItems: 'flex-end',
     },
     image: {
-        width: 60,
+        width: 70,
         height: 60,
     },
     header:{
-        fontSize: 20,
+        fontSize: 22,
         color:'#FFF',
+        paddingLeft: 10,
       
     },
     
